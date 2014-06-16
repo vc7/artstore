@@ -7,5 +7,9 @@
 		<p><%= @product.description %></p>
 		<hr/>
 		<span style="font-size:2em;weight:bold;color:#E53638;"><%= @product.price %> 元</span>
+		<hr/>
+		<div class="pull-right">
+			<%= link_to("加入購物車", add_to_cart_product_path(@product) , :method => :post , :class => "btn btn-primary btn-lg btn-danger") %>
+		</div>
 	</div>
 </div>
